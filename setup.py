@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setuptools.setup(
     name='iqsms-rest',
-    version='0.0.1',
+    version='0.0.2',
     author='Chmelyuk Vladislav',
     author_email='neimp@yandex.ru',
     description='Модуль для работы с REST API смс-шлюза iqsms.ru (СМС Дисконт)',
@@ -19,4 +19,5 @@ setuptools.setup(
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',
+    install_requires=['requests']
 )
