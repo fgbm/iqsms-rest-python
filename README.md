@@ -12,7 +12,7 @@ pip install iqsms-rest
 
 Для начала использования необходимо инициализировать шлюз при помощи логина и пароля к личному кабинету:
 ```python
-from iqsms import Gate
+from iqsms_rest import Gate
 
 gate = Gate('login', 'password')
 ```
