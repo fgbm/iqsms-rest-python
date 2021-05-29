@@ -12,13 +12,13 @@ class Gate:
         self.root_uri = root_uri or 'http://api.iqsms.ru/messages/v2/'
 
     def __get_auth_header(self):
-        str_cred = f"{self.login}:{self.password}"
+        str_cred = f'{self.login}:{self.password}'
         b64_cred = base64.b64encode(bytes(str_cred, 'utf-8'))
-        return {"Authorization": f"Basic {b64_cred.decode('utf-8')}"}
+        return {'Authorization': f'Basic {b64_cred.decode("utf-8")}'}
 
     def __send_request(self, uri, payload=None):
         try:
-            r = requests.get(f"{self.root_uri}{uri}", params=payload, headers=self.__get_auth_header())
+            r = requests.get(f'{self.root_uri}{uri}', params=payload, headers=self.__get_auth_header())
             return r.text
         except IOError as e:
             return dir(e)
