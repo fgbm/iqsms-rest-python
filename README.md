@@ -1,3 +1,7 @@
+![Pypi version](https://img.shields.io/pypi/v/iqsms-rest.svg)
+![Python versions](https://img.shields.io/pypi/pyversions/iqsms-rest)
+[![Upload Python Package](https://github.com/fgbm/iqsms-rest-python/actions/workflows/python-publish.yml/badge.svg)](https://github.com/fgbm/django-tmmis/actions/workflows/python-publish.yml)
+
 # IQSMS REST Gate
 
 Модуль для работы с REST API смс-шлюза [iqsms.ru](https://iqsms.ru/) (СМС Дисконт)
